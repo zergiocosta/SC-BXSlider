@@ -1,0 +1,52 @@
+=== Plugin Name ===
+Contributors: sergiuscosta
+Donate link: http://sergiocosta.net.br/
+Tags: scroll to top
+Requires at least: 3.0.1
+Tested up to: 4.2
+Stable tag: 4.2
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+A simple slideshow/carousel plugin based on BX Slider
+
+== Description ==
+
+A simple slideshow/carousel plugin based on BX Slider
+
+== Installation ==
+
+1. Make sure you have jQuery installed and working
+2. Upload the folder `sc-bxslider` to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Create your slider into SC BCSlider post type, created by the plugin
+5. Place the shortcode '[sc_bxslider]' wherever you want, in your pages/posts OR place <?php echo do_shortcode('[sc_slider]'); ?> in your code
+4. Enjoy!
+
+== Frequently Asked Questions ==
+
+= Do I have all the BX Slider options? =
+
+Not YET. But it will be enabled, in the next versions
+
+= The plugin isn't working! What can I do? =
+
+This plugin requires jQuery. Check if jQuery is being called correctly and check the shortcode.
+
+= If I found some problem, should I report you? = 
+
+Yes, of course you should! Just email, me: sergio.costa@outlook.com ! Thank you! ;)
+
+== Screenshots ==
+
+1. Slideshow
+
+== Changelog ==
+
+= 1.0 =
+* Plugin created
+
+== Upgrade Notice ==
+
+= 1.0 =
+No updates available
