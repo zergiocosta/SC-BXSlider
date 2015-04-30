@@ -47,7 +47,7 @@ Com o Grunt instalado, realize os seguintes passos:
 
 ##### TAREFA WATCH
 
->**Execute com:** grunt w
+>**Execute com:** grunt
 
 >**O que esta tarefa faz?**
 
