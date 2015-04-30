@@ -47,7 +47,7 @@ Com o Grunt instalado, realize os seguintes passos:
 
 ##### TAREFA WATCH
 
->**Execute com:** grunt
+>**Execute com:** `$ grunt`
 
 >**O que esta tarefa faz?**
 
@@ -59,7 +59,7 @@ Com o Grunt instalado, realize os seguintes passos:
 
 ##### TAREFA UGLIFY
 
->**Execute com:** grunt u
+>**Execute com:** `$ grunt u`
 
 >**O que esta tarefa faz?**
 
