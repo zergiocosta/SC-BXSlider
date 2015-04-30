@@ -55,3 +55,12 @@ Com o Grunt instalado, realize os seguintes passos:
 >- Compila todos os arquivos *.scss
 >- Concatena e minifica seus arquivos `*.js` e `*.css`
 >- Executa a validação dos seus scripts
+
+
+##### TAREFA UGLIFY
+
+>**Execute com:** grunt u
+
+>**O que esta tarefa faz?**
+
+>- Minifica e concatena o arquivo JavaScript
