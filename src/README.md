@@ -55,12 +55,3 @@ Com o Grunt instalado, realize os seguintes passos:
 >- Compila todos os arquivos *.scss
 >- Concatena e minifica seus arquivos `*.js` e `*.css`
 >- Executa a validação dos seus scripts
-
-
-##### TAREFA DE OTIMIZAÇÃO
-
->**Execute com:** grunt o
-
->**O que esta tarefa faz?**
-
->- Fará uma otimização das suas imagens
