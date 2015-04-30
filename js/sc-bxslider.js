@@ -1,4 +1,14 @@
-/**
+/*!
+ * -------------------------------------------------------
+ * Project: Sergio Costa BXSlider
+ * Version: 1.0.0
+ *
+ * Author:  Sergio Costa and BXSlider
+ * URL:     http://sergiocosta.net.br and http://bxslider.com
+ * Contact: sergio.costa@outlook.com
+ *
+ *--------------------------------------------------------
+ *
  * sc_bxslider v4.1.2 - Fully loaded, responsive content slider
  * http://sc_bxslider.com
  *
@@ -6,7 +16,8 @@
  * Written while drinking Belgian ales and listening to jazz
  *
  * Released under the MIT license - http://opensource.org/licenses/MIT
- */
+ *---------------------------------------------------------
+ */ 
 
 ;(function($){
 
@@ -660,7 +671,7 @@
 			}
 		}
 
-		/**
+		/** 
 		 * Appends start / stop auto controls to the controls element
 		 */
 		var appendControlsAuto = function(){

@@ -76,7 +76,7 @@ add_shortcode( 'sc_bxslider', 'sc_bxslider_display' );
 // enqueue files
 add_action( 'wp_enqueue_scripts', 'sc_bxslider_files' );
 function sc_bxslider_files() { 
-    wp_enqueue_script( 'sc-bxslider', plugins_url( 'js/sc-bxslider.js', __FILE__ ), array( 'jquery' ), null, true );
+    wp_enqueue_script( 'sc-bxslider', plugins_url( 'js/sc-bxslider.min.js', __FILE__ ), array( 'jquery' ), null, true );
     wp_enqueue_style( 'sc-bxslider', plugins_url( 'css/sc-bxslider.css', __FILE__ ), array(), null, 'all' );
 }
 
