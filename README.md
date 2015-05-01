@@ -15,4 +15,4 @@ Otherwise, soon, I'll make it possible. All the options you have on [BX Slider](
 
 
 ## License
-![WTFPL](wtfpl-badge.png "WTFPL")
+[![WTFPL](wtfpl-badge.png "WTFPL")](https://github.com/zergiocosta/SC-BXSlider/blob/master/LICENSE)
