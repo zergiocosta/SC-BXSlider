@@ -169,8 +169,8 @@ function randomStart_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[randomStart]'>
-        <option value='false' <?php selected( $options['randomStart'], true ); ?>>false</option>
-        <option value='true' <?php selected( $options['randomStart'], true ); ?>>true</option>
+        <option value='false' <?php selected( $options['randomStart'], 'false'); ?>>false</option>
+        <option value='true' <?php selected( $options['randomStart'], 'true'); ?>>true</option>
     </select>
 
 <?php
@@ -183,8 +183,8 @@ function infiniteLoop_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[infiniteLoop]'>
-        <option value='true' <?php selected( $options['infiniteLoop'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['infiniteLoop'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['infiniteLoop'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['infiniteLoop'], 'false'); ?>>false</option>
     </select>
 
 <?php
@@ -197,8 +197,8 @@ function hideControlOnEnd_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[hideControlOnEnd]'>
-        <option value='false' <?php selected( $options['hideControlOnEnd'], true ); ?>>false</option>
-        <option value='true' <?php selected( $options['hideControlOnEnd'], true ); ?>>true</option>
+        <option value='false' <?php selected( $options['hideControlOnEnd'], 'false'); ?>>false</option>
+        <option value='true' <?php selected( $options['hideControlOnEnd'], 'true'); ?>>true</option>
     </select>
 
 <?php
@@ -211,8 +211,8 @@ function captions_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[captions]'>
-        <option value='true' <?php selected( $options['captions'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['captions'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['captions'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['captions'], 'false'); ?>>false</option>
     </select>
 
 <?php
@@ -225,8 +225,8 @@ function ticker_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[ticker]'>
-        <option value='false' <?php selected( $options['ticker'], true ); ?>>false</option>
-        <option value='true' <?php selected( $options['ticker'], true ); ?>>true</option>
+        <option value='false' <?php selected( $options['ticker'], 'false'); ?>>false</option>
+        <option value='true' <?php selected( $options['ticker'], 'true'); ?>>true</option>
     </select>
 
 <?php
@@ -239,8 +239,8 @@ function tickerHover_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[tickerHover]'>
-        <option value='false' <?php selected( $options['tickerHover'], true ); ?>>false</option>
-        <option value='true' <?php selected( $options['tickerHover'], true ); ?>>true</option>
+        <option value='false' <?php selected( $options['tickerHover'], 'false'); ?>>false</option>
+        <option value='true' <?php selected( $options['tickerHover'], 'true'); ?>>true</option>
     </select>
 
 <?php
@@ -253,8 +253,8 @@ function adaptativeHeight_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[adaptativeHeight]'>
-        <option value='false' <?php selected( $options['adaptativeHeight'], true ); ?>>false</option>
-        <option value='true' <?php selected( $options['adaptativeHeight'], true ); ?>>true</option>
+        <option value='false' <?php selected( $options['adaptativeHeight'], 'false'); ?>>false</option>
+        <option value='true' <?php selected( $options['adaptativeHeight'], 'true'); ?>>true</option>
     </select>
 
 <?php
@@ -281,8 +281,8 @@ function responsive_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[responsive]'>
-        <option value='true' <?php selected( $options['responsive'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['responsive'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['responsive'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['responsive'], 'false'); ?>>false</option>
     </select>
 
 <?php
@@ -295,8 +295,8 @@ function preloadImages_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[preloadImages]'>
-        <option value='false' <?php selected( $options['preloadImages'], true ); ?>>false</option>
-        <option value='true' <?php selected( $options['preloadImages'], true ); ?>>true</option>
+        <option value='false' <?php selected( $options['preloadImages'], 'false'); ?>>false</option>
+        <option value='true' <?php selected( $options['preloadImages'], 'true'); ?>>true</option>
     </select>
 
 <?php
@@ -309,8 +309,8 @@ function touchEnabled_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[touchEnabled]'>
-        <option value='true' <?php selected( $options['touchEnabled'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['touchEnabled'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['touchEnabled'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['touchEnabled'], 'false'); ?>>false</option>
     </select>
 
 <?php
@@ -323,8 +323,8 @@ function oneToOneTouch_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[oneToOneTouch]'>
-        <option value='true' <?php selected( $options['oneToOneTouch'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['oneToOneTouch'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['oneToOneTouch'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['oneToOneTouch'], 'false'); ?>>false</option>
     </select>
 
 <?php
@@ -337,8 +337,8 @@ function preventDefaultSwipeX_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[preventDefaultSwipeX]'>
-        <option value='true' <?php selected( $options['preventDefaultSwipeX'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['preventDefaultSwipeX'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['preventDefaultSwipeX'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['preventDefaultSwipeX'], 'false'); ?>>false</option>
     </select>
 
 <?php
@@ -351,8 +351,8 @@ function preventDefaultSwipeY_render(  ) {
     $options = get_option( 'sc_bxslider_settings' );
     ?>
     <select name='sc_bxslider_settings[preventDefaultSwipeY]'>
-        <option value='true' <?php selected( $options['preventDefaultSwipeY'], true ); ?>>true</option>
-        <option value='false' <?php selected( $options['preventDefaultSwipeY'], true ); ?>>false</option>
+        <option value='true' <?php selected( $options['preventDefaultSwipeY'], 'true'); ?>>true</option>
+        <option value='false' <?php selected( $options['preventDefaultSwipeY'], 'false'); ?>>false</option>
     </select>
 
 <?php
