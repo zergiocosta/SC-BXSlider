@@ -49,6 +49,9 @@ Yes, of course you should! Just email, me: sergio.costa@outlook.com ! Thank you!
 = 2.0 =
 * General options from the original BX Slider added to the plugin
 
+= 2.0.1 =
+* print_r that was showing got removed from the plugin
+
 == Upgrade Notice ==
 
 = 2.0 =
