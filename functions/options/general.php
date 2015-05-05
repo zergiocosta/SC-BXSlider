@@ -370,8 +370,7 @@ function sc_bxslider_settings_section_callback(  ) {
 // call plugin
 add_action( 'wp_footer', 'sc_bxslider_call', 9999 );
 function sc_bxslider_call() { 
-    $options = get_option( 'sc_bxslider_settings' );
-    print_r($options);?>
+    $options = get_option( 'sc_bxslider_settings' ); ?>
 
 	<script>
 		jQuery(document).ready(function(){
