@@ -376,20 +376,20 @@ function sc_bxslider_call() {
 	<script>
 		jQuery(document).ready(function(){
 			jQuery('.sc-bxslider').sc_bxslider({
-				mode: '<?php echo $options["mode"]; ?>',
-				randomStart: <?php echo $options['randomStart']; ?>,
-				infiniteLoop: <?php echo $options['infiniteLoop']; ?>,
-				hideControlOnEnd: <?php echo $options['hideControlOnEnd']; ?>,
-				captions: <?php echo $options['captions']; ?>,
-				ticker: <?php echo $options['ticker']; ?>,
-				tickerHover: <?php echo $options['tickerHover']; ?>,
-				adaptativeHeight: <?php echo $options['adaptativeHeight']; ?>,
-				responsive: <?php echo $options['responsive']; ?>,
-				preloadImages: <?php echo $options['preloadImages']; ?>,
-				touchEnabled: <?php echo $options['touchEnabled']; ?>,
-				oneToOneTouch: <?php echo $options['oneToOneTouch']; ?>,
-				preventDefaultSwipeX: <?php echo $options['preventDefaultSwipeX']; ?>, 
-				preventDefaultSwipeY: <?php echo $options['preventDefaultSwipeY']; ?>,
+                <?php if (isset($options["mode"]))                  { echo "mode: '" . $options['mode'] . "'"; } ?>,
+                <?php if (isset($options["randomStart"]))           { echo "randomStart: " . $options["randomStart"]; } ?>,
+                <?php if (isset($options["infiniteLoop"]))          { echo "infiniteLoop: " . $options["infiniteLoop"]; } ?>,
+                <?php if (isset($options["hideControlOnEnd"]))      { echo "hideControlOnEnd: " . $options["hideControlOnEnd"]; } ?>,
+                <?php if (isset($options["captions"]))              { echo "captions: " . $options["captions"]; } ?>,
+                <?php if (isset($options["ticker"]))                { echo "ticker: " . $options["ticker"]; } ?>,
+                <?php if (isset($options["tickerHover"]))           { echo "tickerHover: " . $options["tickerHover"]; } ?>,
+                <?php if (isset($options["adaptativeHeight"]))      { echo "adaptativeHeight: " . $options["adaptativeHeight"]; } ?>,
+                <?php if (isset($options["responsive"]))            { echo "responsive: " . $options["responsive"]; } ?>,
+                <?php if (isset($options["preloadImages"]))         { echo "preloadImages: " . $options["preloadImages"]; } ?>,
+                <?php if (isset($options["touchEnabled"]))          { echo "touchEnabled: " . $options["touchEnabled"]; } ?>,
+                <?php if (isset($options["oneToOneTouch"]))         { echo "oneToOneTouch: " . $options["oneToOneTouch"]; } ?>,
+                <?php if (isset($options["preventDefaultSwipeX"]))  { echo "preventDefaultSwipeX: " . $options["preventDefaultSwipeX"]; } ?>,
+                <?php if (isset($options["preventDefaultSwipeY"]))  { echo "preventDefaultSwipeY: " . $options["preventDefaultSwipeY"]; } ?>,
 			});
 		});
 	</script>
