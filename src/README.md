@@ -47,7 +47,7 @@ Com o Grunt instalado, realize os seguintes passos:
 
 ##### TAREFA WATCH
 
->**Execute com:** `$ grunt`
+>**Execute com:** grunt w
 
 >**O que esta tarefa faz?**
 
@@ -57,10 +57,10 @@ Com o Grunt instalado, realize os seguintes passos:
 >- Executa a validação dos seus scripts
 
 
-##### TAREFA UGLIFY
+##### TAREFA DE OTIMIZAÇÃO
 
->**Execute com:** `$ grunt u`
+>**Execute com:** grunt o
 
 >**O que esta tarefa faz?**
 
->- Minifica e concatena o arquivo JavaScript
+>- Fará uma otimização das suas imagens
