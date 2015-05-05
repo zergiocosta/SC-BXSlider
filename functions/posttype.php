@@ -25,7 +25,7 @@ if ( ! function_exists('sc_bxslider_posttype') ) {
 			'description'         => __('SC BXSlider plugin'),
 			'labels'              => $labels,
 			'supports'            => array( 'title', 'thumbnail', ),
-			'taxonomies'          => array( 'category', 'post_tag' ),
+			'taxonomies'          => array( 'post_tag' ),
 			'hierarchical'        => true,
 			'public'              => true,
 			'show_ui'             => true,
