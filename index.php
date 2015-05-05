@@ -21,19 +21,4 @@ function sc_bxslider_files() {
     wp_enqueue_style( 'sc-bxslider', plugins_url( 'css/sc-bxslider.css', __FILE__ ), array(), null, 'all' );
 }
 
-// call plugin
-add_action( 'wp_footer', 'sc_bxslider_call', 9999 );
-function sc_bxslider_call() { ?>
-
-	<script>
-		jQuery(document).ready(function(){
-			jQuery('.sc-bxslider').sc_bxslider({
-				mode: 'fade',
-				captions: true
-			});
-		});
-	</script>
-
-<?php }
-
 ?>

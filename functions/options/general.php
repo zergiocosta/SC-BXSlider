@@ -49,7 +49,7 @@ function sc_bxslider_settings_init(  ) {
     // captions
     add_settings_field( 
         'captions', 
-        __( 'Settings field description', 'scbxslider' ), 
+        __( 'captions', 'scbxslider' ), 
         'captions_render', 
         'sc_bxslider', 
         'sc_bxslider_sc_bxslider_section' 
@@ -362,6 +362,37 @@ function preventDefaultSwipeY_render(  ) {
 
 function sc_bxslider_settings_section_callback(  ) { 
 
-    echo __( 'This section description', 'scbxslider' );
-
+    echo __( 'General Configuration for SC BXSlider', 'scbxslider' );
 }
+
+
+
+// call plugin
+add_action( 'wp_footer', 'sc_bxslider_call', 9999 );
+function sc_bxslider_call() { 
+    $options = get_option( 'sc_bxslider_settings' );
+    print_r($options);?>
+
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('.sc-bxslider').sc_bxslider({
+				mode: <?php if ($options['mode'] == 1) { echo "'fade'"; } elseif ($options['mode'] == 2) { echo "'horizontal'"; } else { echo "'vertical'"; } ?>,
+				randomStart: <?php if ($options['randomStart'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				infiniteLoop: <?php if ($options['infiniteLoop'] == 1) { echo 'true'; } else { echo 'false'; } ?>,
+				hideControlOnEnd: <?php if ($options['hideControlOnEnd'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				captions: <?php if ($options['captions'] == 1) { echo 'true'; } else { echo 'false'; } ?>,
+				ticker: <?php if ($options['ticker'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				tickerHover: <?php if ($options['tickerHover'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				adaptativeHeight: <?php if ($options['adaptativeHeight'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				video: <?php if ($options['video'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				responsive: <?php if ($options['responsive'] == 1) { echo 'true'; } else { echo 'false'; } ?>,
+				preloadImages: <?php if ($options['preloadImages'] == 1) { echo 'false'; } else { echo 'true'; } ?>,
+				touchEnabled: <?php if ($options['touchEnabled'] == 1) { echo 'true'; } else { echo 'false'; } ?>,
+				oneToOneTouch: <?php if ($options['oneToOneTouch'] == 1) { echo 'true'; } else { echo 'false'; } ?>,
+				preventDefaultSwipeX: <?php if ($options['preventDefaultSwipeX'] == 1) { echo 'true'; } else { echo 'false'; } ?>, 
+				preventDefaultSwipeY: <?php if ($options['preventDefaultSwipeY'] == 1) { echo 'true'; } else { echo 'false'; } ?>,
+			});
+		});
+	</script>
+
+<?php }
