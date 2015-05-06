@@ -18,5 +18,10 @@ Initially, a very simple plugin, with a few options on the administrator panel, 
 Otherwise, soon, I'll make it possible. All the options you have on [BX Slider](http://bxslider.com/) you will have in here.
 
 
+### What is coming next?
+ - More options into the plugin's options page
+ - Call files and scripts only when necessary
+
+
 ## License
 [![WTFPL](wtfpl-badge.png "WTFPL")](https://github.com/zergiocosta/SC-BXSlider/blob/master/LICENSE)
