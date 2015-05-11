@@ -13,7 +13,7 @@ function sc_bxslider_settings_init(  ) {
         // custom CSS
         add_settings_field( 
             'custom_css', 
-            __( 'Custom CSS', 'scbxslider' ), 
+            __( 'Custom CSS (for developers)', 'scbxslider' ), 
             'custom_css_render', 
             'sc_bxslider', 
             'sc_bxslider_sc_bxslider_section' 
@@ -154,18 +154,6 @@ function sc_bxslider_settings_init(  ) {
             'sc_bxslider_sc_bxslider_section' 
         );
 
-
-}
-
-// custom CSS
-function custom_css_render(  ) { 
-
-    $options = get_option( 'sc_bxslider_settings' );
-    ?>
-    <textarea cols='40' rows='8' name='sc_bxslider_settings[custom_css]'> 
-        <?php echo $options['custom_css']; ?>
-    </textarea>
-    <?php
 
 }
 
@@ -377,6 +365,18 @@ function preventDefaultSwipeY_render(  ) {
     </select>
 
 <?php
+
+}
+
+// custom CSS
+function custom_css_render(  ) { 
+
+    $options = get_option( 'sc_bxslider_settings' );
+    ?>
+    <textarea cols='40' rows='8' name='sc_bxslider_settings[custom_css]'> 
+        <?php echo $options['custom_css']; ?>
+    </textarea>
+    <?php
 
 }
 
