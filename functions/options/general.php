@@ -3,148 +3,169 @@ function sc_bxslider_settings_init(  ) {
 
     register_setting( 'sc_bxslider', 'sc_bxslider_settings' );
 
-    add_settings_section(
-        'sc_bxslider_sc_bxslider_section', 
-        __( 'General configuration', 'scbxslider' ), 
-        'sc_bxslider_settings_section_callback', 
-        'sc_bxslider'
-    );
+        add_settings_section(
+            'sc_bxslider_sc_bxslider_section', 
+            __( 'General configuration', 'scbxslider' ), 
+            'sc_bxslider_settings_section_callback', 
+            'sc_bxslider'
+        );
 
-    // mode
-    add_settings_field( 
-        'mode', 
-        __( 'mode', 'scbxslider' ), 
-        'mode_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // custom CSS
+        add_settings_field( 
+            'custom_css', 
+            __( 'Custom CSS', 'scbxslider' ), 
+            'custom_css_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // randomStart
-    add_settings_field( 
-        'randomStart', 
-        __( 'randomStart', 'scbxslider' ), 
-        'randomStart_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // mode
+        add_settings_field( 
+            'mode', 
+            __( 'mode', 'scbxslider' ), 
+            'mode_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // infiniteLoop
-    add_settings_field( 
-        'infiniteLoop', 
-        __( 'infiniteLoop', 'scbxslider' ), 
-        'infiniteLoop_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // randomStart
+        add_settings_field( 
+            'randomStart', 
+            __( 'randomStart', 'scbxslider' ), 
+            'randomStart_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // hideControlOnEnd
-    add_settings_field( 
-        'hideControlOnEnd', 
-        __( 'hideControlOnEnd', 'scbxslider' ), 
-        'hideControlOnEnd_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // infiniteLoop
+        add_settings_field( 
+            'infiniteLoop', 
+            __( 'infiniteLoop', 'scbxslider' ), 
+            'infiniteLoop_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // captions
-    add_settings_field( 
-        'captions', 
-        __( 'captions', 'scbxslider' ), 
-        'captions_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // hideControlOnEnd
+        add_settings_field( 
+            'hideControlOnEnd', 
+            __( 'hideControlOnEnd', 'scbxslider' ), 
+            'hideControlOnEnd_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // ticker
-    add_settings_field( 
-        'ticker', 
-        __( 'ticker', 'scbxslider' ), 
-        'ticker_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // captions
+        add_settings_field( 
+            'captions', 
+            __( 'captions', 'scbxslider' ), 
+            'captions_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // tickerHoder
-    add_settings_field( 
-        'tickerHover', 
-        __( 'tickerHover', 'scbxslider' ), 
-        'tickerHover_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // ticker
+        add_settings_field( 
+            'ticker', 
+            __( 'ticker', 'scbxslider' ), 
+            'ticker_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // adaptativeHeight
-    add_settings_field( 
-        'adaptativeHeight', 
-        __( 'adaptativeHeight', 'scbxslider' ), 
-        'adaptativeHeight_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // tickerHoder
+        add_settings_field( 
+            'tickerHover', 
+            __( 'tickerHover', 'scbxslider' ), 
+            'tickerHover_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // video
-    /*add_settings_field( 
-        'video', 
-        __( 'video', 'scbxslider' ), 
-        'video_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );*/
+        // adaptativeHeight
+        add_settings_field( 
+            'adaptativeHeight', 
+            __( 'adaptativeHeight', 'scbxslider' ), 
+            'adaptativeHeight_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // responsive
-    add_settings_field( 
-        'responsive', 
-        __( 'responsive', 'scbxslider' ), 
-        'responsive_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // video
+        /*add_settings_field( 
+            'video', 
+            __( 'video', 'scbxslider' ), 
+            'video_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );*/
 
-    // preloadImages
-    add_settings_field( 
-        'preloadImages', 
-        __( 'preloadImages', 'scbxslider' ), 
-        'preloadImages_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // responsive
+        add_settings_field( 
+            'responsive', 
+            __( 'responsive', 'scbxslider' ), 
+            'responsive_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // touchEnabled
-    add_settings_field( 
-        'touchEnabled', 
-        __( 'touchEnabled', 'scbxslider' ), 
-        'touchEnabled_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // preloadImages
+        add_settings_field( 
+            'preloadImages', 
+            __( 'preloadImages', 'scbxslider' ), 
+            'preloadImages_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // oneToOneTouch
-    add_settings_field( 
-        'oneToOneTouch', 
-        __( 'oneToOneTouch', 'scbxslider' ), 
-        'oneToOneTouch_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // touchEnabled
+        add_settings_field( 
+            'touchEnabled', 
+            __( 'touchEnabled', 'scbxslider' ), 
+            'touchEnabled_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // preventDefaultSwipeX
-    add_settings_field( 
-        'preventDefaultSwipeX', 
-        __( 'preventDefaultSwipeX', 'scbxslider' ), 
-        'preventDefaultSwipeX_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // oneToOneTouch
+        add_settings_field( 
+            'oneToOneTouch', 
+            __( 'oneToOneTouch', 'scbxslider' ), 
+            'oneToOneTouch_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
-    // preventDefaultSwipeY
-    add_settings_field( 
-        'preventDefaultSwipeY', 
-        __( 'preventDefaultSwipeY', 'scbxslider' ), 
-        'preventDefaultSwipeY_render', 
-        'sc_bxslider', 
-        'sc_bxslider_sc_bxslider_section' 
-    );
+        // preventDefaultSwipeX
+        add_settings_field( 
+            'preventDefaultSwipeX', 
+            __( 'preventDefaultSwipeX', 'scbxslider' ), 
+            'preventDefaultSwipeX_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
 
+        // preventDefaultSwipeY
+        add_settings_field( 
+            'preventDefaultSwipeY', 
+            __( 'preventDefaultSwipeY', 'scbxslider' ), 
+            'preventDefaultSwipeY_render', 
+            'sc_bxslider', 
+            'sc_bxslider_sc_bxslider_section' 
+        );
+
+
+}
+
+// custom CSS
+function custom_css_render(  ) { 
+
+    $options = get_option( 'sc_bxslider_settings' );
+    ?>
+    <textarea cols='40' rows='8' name='sc_bxslider_settings[custom_css]'> 
+        <?php echo $options['custom_css']; ?>
+    </textarea>
+    <?php
 
 }
 
@@ -359,13 +380,10 @@ function preventDefaultSwipeY_render(  ) {
 
 }
 
-
 function sc_bxslider_settings_section_callback(  ) { 
 
     echo __( 'General Configuration for SC BXSlider', 'scbxslider' );
 }
-
-
 
 // call plugin
 add_action( 'wp_footer', 'sc_bxslider_call', 9999 );
@@ -373,9 +391,9 @@ function sc_bxslider_call() {
     $options = get_option( 'sc_bxslider_settings' ); ?>
 
 
-	<script>
-		jQuery(document).ready(function(){
-			jQuery('.sc-bxslider').sc_bxslider({
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.sc-bxslider').sc_bxslider({
                 <?php if (isset($options["mode"]))                  { echo "mode: '" . $options['mode'] . "'"; } ?>,
                 <?php if (isset($options["randomStart"]))           { echo "randomStart: " . $options["randomStart"]; } ?>,
                 <?php if (isset($options["infiniteLoop"]))          { echo "infiniteLoop: " . $options["infiniteLoop"]; } ?>,
@@ -390,8 +408,21 @@ function sc_bxslider_call() {
                 <?php if (isset($options["oneToOneTouch"]))         { echo "oneToOneTouch: " . $options["oneToOneTouch"]; } ?>,
                 <?php if (isset($options["preventDefaultSwipeX"]))  { echo "preventDefaultSwipeX: " . $options["preventDefaultSwipeX"]; } ?>,
                 <?php if (isset($options["preventDefaultSwipeY"]))  { echo "preventDefaultSwipeY: " . $options["preventDefaultSwipeY"]; } ?>,
-			});
-		});
-	</script>
+            });
+        });
+    </script>
 
 <?php }
+
+// custom css
+add_action('wp_head', 'sc_bxslider_custom_css');
+function sc_bxslider_custom_css() { 
+    $options = get_option( 'sc_bxslider_settings' );
+    if (isset($options['custom_css'])) : ?>
+        <style>
+            /* Custom CSS by SC BXSlider */ 
+            <?php echo $options['custom_css']; ?>
+        </style> <?php
+    endif;
+}
+
