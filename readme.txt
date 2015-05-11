@@ -14,6 +14,25 @@ A simple slideshow/carousel plugin based on BX Slider
 
 A simple slideshow/carousel plugin based on BX Slider
 
+You can edit several options from the original BX Slider (soon, all those options will be enabled and you will be able to edit)
+
+Very, very, very easy to install, configure and use =D
+
+Last update: Now you can add your own custom css, into the administrator panel
+
+Enjoy! =D
+
+Just:
+1. Make sure you have jQuery installed and working
+2. Upload the folder `sc-bxslider` to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Create your slider into SC BCSlider post type, created by the plugin
+5. Place the shortcode '[sc_bxslider]' wherever you want, in your pages/posts OR place the following code into your php file:
+ `<?php echo do_shortcode('[sc_slider]'); ?>` 
+6. Configure your slider into the administrator panel, if you want
+7. Edit your custom css, into the administrator panel (brand new)
+8. Enjoy!
+
 == Installation ==
 
 1. Make sure you have jQuery installed and working
